@@ -1,0 +1,25 @@
+<!-- Diva.Data.MySql -->
+<Project frameworkVersion="v3_5" name="AuroraWeb.Data.MySQL" path="addon-modules/AuroraWeb.Data/MySQL" type="Library">
+  <Configuration name="Debug">
+    <Options>
+      <OutputPath>../../../bin/</OutputPath>
+    </Options>
+  </Configuration>
+  <Configuration name="Release">
+    <Options>
+      <OutputPath>../../../bin/</OutputPath>
+    </Options>
+  </Configuration>
+
+  <ReferencePath>../../../bin/</ReferencePath>
+  <Reference name="System.Reflection"/>
+  <Reference name="Aurora.Framework"/>
+  <Reference name="Aurora.Services.DataService"/>
+  <Reference name="Nini"/>
+  <Reference name="OpenMetaverseTypes"/>
+  <Files>
+    <Match pattern="*.cs" recurse="true">
+      <Exclude pattern="Tests" />
+    </Match>
+  </Files>
+</Project>

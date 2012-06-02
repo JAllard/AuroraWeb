@@ -1,0 +1,28 @@
+<!-- AuroraWeb.Data -->
+<Project frameworkVersion="v3_5" name="AuroraWeb.Data" path="addon-modules/AuroraWeb.Data" type="Library">
+  <Configuration name="Debug">
+    <Options>
+      <OutputPath>../../bin/</OutputPath>
+    </Options>
+  </Configuration>
+  <Configuration name="Release">
+    <Options>
+      <OutputPath>../../bin/</OutputPath>
+    </Options>
+  </Configuration>
+
+  <ReferencePath>../../bin/</ReferencePath>
+  <Reference name="System"/>
+  <Reference name="System.Core"/>
+  <Reference name="System.Collections.Generic"/>
+  <Reference name="OpenMetaverseTypes" path="../../bin/"/>
+
+  <Reference name="OpenSim.Services.Interfaces"/>
+  <Reference name="Aurora.Framework"/>
+
+  <Files>
+    <Match pattern="*.cs" recurse="false">
+      <Exclude pattern="Tests" />
+    </Match>
+  </Files>
+</Project>

@@ -1,5 +1,5 @@
 <!-- Aurora.Web.ScriptEngine -->
-<Project frameworkVersion="v3_5" name="AuroraWeb.Utils" path="addon-modules/AuroraWeb.Utils" type="Library">
+<Project frameworkVersion="v3_5" name="AuroraWeb.ScriptEngine" path="addon-modules/AuroraWeb.ScriptEngine" type="Library">
   <Configuration name="Debug">
     <Options>
       <OutputPath>../../bin/</OutputPath>
@@ -18,6 +18,8 @@
 
   <Reference name="Nini" path="../../bin/"/>
   <Reference name="log4net" path="../../bin/"/>
+
+  <Reference name="AuroraWeb.Utils"/>
 
   <Files>
     <Match pattern="*.cs" recurse="true">

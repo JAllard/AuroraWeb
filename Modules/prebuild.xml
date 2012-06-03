@@ -1,0 +1,30 @@
+<!-- Image Service Module -->
+<Project frameworkVersion="v3_5" name="AuroraWeb.Modules" path="addon-modules/Modules" type="Library">
+  <Configuration name="Debug">
+    <Options>
+      <OutputPath>../../bin/</OutputPath>
+    </Options>
+  </Configuration>
+  <Configuration name="Release">
+    <Options>
+      <OutputPath>../../bin/</OutputPath>
+    </Options>
+  </Configuration>
+
+  <ReferencePath>../../bin/</ReferencePath>
+  <Reference name="System"/>
+  <Reference name="System.Drawing"/>
+  <Reference name="OpenMetaverse" path="../../bin/"/>
+  <Reference name="OpenMetaverseTypes" path="../../bin/"/>
+  <Reference name="OpenSim.Region.Framework"/>
+    <Reference name="Aurora.Framework"/>
+  <Reference name="Nini" path="../../bin/" />
+  <Reference name="log4net" path="../../bin/"/>
+  
+  <Reference name="AuroraWeb.Utils"/>
+
+  <Files>
+    <Match pattern="*.cs" recurse="true"/>
+  </Files>
+
+</Project>

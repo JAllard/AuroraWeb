@@ -31,6 +31,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using Aurora.Framework;
 using Aurora.Simulation.Base;
+using AuroraWeb;
 using OpenSim.Region.Framework;
 using OpenSim.Region.Framework.Interfaces;
 using OpenSim.Region.Framework.Scenes;
@@ -63,7 +64,7 @@ namespace Aurora.Web
                 if (m_enabled)
                 {
                     object[] args = new object[] { config, MainServer.Instance, string.Empty };
-                    //new WifiServerConnector(config, MainServer.Instance, string.Empty);
+                    new WifiServerConnector(config, MainServer.Instance, string.Empty);
 
                     AuroraModuleLoader.LoadPlugins<IService>("Aurora.Web.dll:WifiServerConnector");
                     m_log.Debug("[Web Module]: AuroraWeb enabled.");
@@ -82,12 +83,13 @@ namespace Aurora.Web
 
         public void AddRegion(IScene scene)
         {
-            throw new NotImplementedException();
+            scene.RegisterModuleInterface<WifiModule>(this);
+            scene.RegisterModuleInterface(this);
         }
 
         public void RegionLoaded(IScene scene)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void RemoveRegion(IScene scene)

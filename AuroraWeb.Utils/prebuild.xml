@@ -1,4 +1,4 @@
-<!-- Aurora.Web.ScriptEngine -->
+<!-- Diva.Wifi.ScriptEngine -->
 <Project frameworkVersion="v3_5" name="AuroraWeb.Utils" path="addon-modules/AuroraWeb.Utils" type="Library">
   <Configuration name="Debug">
     <Options>

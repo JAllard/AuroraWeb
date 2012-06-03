@@ -53,27 +53,28 @@ namespace AuroraWeb.Data.SQLite
 
         public string Name
         {
-            get { throw new NotImplementedException(); }
+            get { return GetType().AssemblyQualifiedName; }
         }
 
         public Type ReplaceableInterface
         {
-            get { throw new NotImplementedException(); }
+            get { return null; }
         }
 
         public void Initialise(IConfigSource source)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void AddRegion(IScene scene)
         {
-            throw new NotImplementedException();
+            scene.RegisterModuleInterface<SQLiteEstateStore>(this);
+            scene.RegisterModuleInterface(this);
         }
 
         public void RegionLoaded(IScene scene)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void RemoveRegion(IScene scene)

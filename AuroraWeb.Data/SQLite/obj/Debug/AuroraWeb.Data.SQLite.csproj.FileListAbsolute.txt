@@ -1,0 +1,5 @@
+C:\Users\Enrico\Desktop\as\Aurora-Sim\bin\AuroraWeb.Data.SQLite.dll
+C:\Users\Enrico\Desktop\as\Aurora-Sim\bin\AuroraWeb.Data.SQLite.pdb
+C:\Users\Enrico\Desktop\as\Aurora-Sim\addon-modules\AuroraWeb.Data\SQLite\obj\Debug\AuroraWeb.Data.SQLite.csprojResolveAssemblyReference.cache
+C:\Users\Enrico\Desktop\as\Aurora-Sim\addon-modules\AuroraWeb.Data\SQLite\obj\Debug\AuroraWeb.Data.SQLite.dll
+C:\Users\Enrico\Desktop\as\Aurora-Sim\addon-modules\AuroraWeb.Data\SQLite\obj\Debug\AuroraWeb.Data.SQLite.pdb

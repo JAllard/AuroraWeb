@@ -1,0 +1,3 @@
+C:\Users\Enrico\Desktop\as\Aurora-Sim\addon-modules\AuroraWeb.Data\MySQL\bin\AuroraWeb.Data.MySQL.dll
+C:\Users\Enrico\Desktop\as\Aurora-Sim\addon-modules\AuroraWeb.Data\MySQL\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Enrico\Desktop\as\Aurora-Sim\addon-modules\AuroraWeb.Data\MySQL\obj\x86\Release\AuroraWeb.Data.MySQL.dll

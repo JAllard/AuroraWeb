@@ -241,7 +241,7 @@ namespace AuroraWeb.Utils
         // <a href="wifi/..." ...>
         static Regex href = new Regex("(<a\\s+.*href\\s*=\\s*\\\"(\\S+\\\")).*>");
         static Regex action = new Regex("(<form\\s+.*action\\s*=\\s*\\\"(\\S+\\\")).*>");
-        static Regex xmlhttprequest = new Regex("(@@wifi@@(\\S+\\\"))");
+        static Regex xmlhttprequest = new Regex("(@@auroraweb@@(\\S+\\\"))");
 
         public static string PadURLs(string sid, string html)
         {
@@ -253,14 +253,14 @@ namespace AuroraWeb.Utils
             foreach (string uri in uris)
             {
                 string uri2 = uri.Substring(0, uri.Length - 1);
-                //m_log.DebugFormat("[Wifi]: replacing {0} with {1}", uri, uri2 + "?sid=" + sid + "\"");
+                //m_log.DebugFormat("[AuroraWeb]: replacing {0} with {1}", uri, uri2 + "?sid=" + sid + "\"");
                 if (!uri.EndsWith("/"))
                     html = html.Replace(uri, uri2 + "/?sid=" + sid + "\"");
                 else
                     html = html.Replace(uri, uri2 + "?sid=" + sid + "\"");
             }
             // Remove any @@wifi@@
-            html = html.Replace("@@wifi@@", string.Empty);
+            html = html.Replace("@@auroraweb@@", string.Empty);
 
             return html;
         }
@@ -282,14 +282,14 @@ namespace AuroraWeb.Utils
             foreach (string uri in uris)
             {
                 string uri2 = uri.Substring(0, uri.Length - 1);
-                //m_log.DebugFormat("[Wifi]: replacing {0} with {1}", uri, uri2 + "?sid=" + sid + "\"");
+                //m_log.DebugFormat("[AuroraWeb]: replacing {0} with {1}", uri, uri2 + "?sid=" + sid + "\"");
                 if (!uri.EndsWith("/"))
                     html = html.Replace(uri, uri2 + "/?" + query + "\"");
                 else
                     html = html.Replace(uri, uri2 + "?" + query + "\"");
             }
             // Remove any @@wifi@@
-            html = html.Replace("@@wifi@@", string.Empty);
+            html = html.Replace("@@auroraweb@@", string.Empty);
 
             return html;
         }

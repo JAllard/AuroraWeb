@@ -86,12 +86,13 @@ namespace MetaverseInk.ImageService
 
         public void AddRegion(IScene scene)
         {
-            throw new NotImplementedException();
+            scene.RegisterModuleInterface<ImageServiceModule>(this);
+            scene.RegisterModuleInterface(this);
         }
 
         public void RegionLoaded(IScene scene)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void RemoveRegion(IScene scene)

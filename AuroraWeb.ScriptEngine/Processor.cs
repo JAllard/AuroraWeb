@@ -68,7 +68,7 @@ namespace AuroraWeb.WifiScript
             m_Env = env;
             m_ListOfObjects = lot;
             m_Index = 0;
-            //m_log.DebugFormat("[Wifi]: New processor m_Index = {0}", m_Index);
+            //m_log.DebugFormat("[AuroraWeb]: New processor m_Index = {0}", m_Index);
         }
 
         public string Process(string html)

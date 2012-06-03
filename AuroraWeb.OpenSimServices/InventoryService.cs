@@ -273,6 +273,11 @@ namespace AuroraWeb.OpenSimServices
             throw new NotImplementedException();
         }
 
+        public bool AddItem(string item)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool UpdateItem(InventoryItemBase item)
         {
             throw new NotImplementedException();

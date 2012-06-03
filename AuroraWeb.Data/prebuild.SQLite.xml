@@ -12,21 +12,21 @@
   </Configuration>
 
   <ReferencePath>../../../bin/</ReferencePath>
-  <Reference name="System"/>
-  <Reference name="System.Core"/>
-  <Reference name="System.Data"/>
-
+  <Reference name="Aurora.DataManager.SQLite"/>
+  <Reference name="Aurora.Framework"/>
+  <Reference name="Aurora.Services.DataService"/>
+  <Reference name="AuroraWeb.Data"/>
   <Reference name="Mono.Data.Sqlite"/>
-  <Reference name="OpenMetaverseTypes" path="../../../bin/"/>
-
-  <Reference name="OpenSim.Framework"/>
-  <Reference name="OpenSim.Data"/>
-  <Reference name="OpenSim.Data.Null"/>
-  <Reference name="OpenSim.Data.SQLite"/>
+  <Reference name="Nini"/>
+  <Reference name="OpenMetaverse.StructuredData"/>
+  <Reference name="OpenMetaverseTypes"/>
   <Reference name="OpenSim.Region.Framework"/>
-
-  <Reference name="Diva.Data"/>
-
+  <Reference name="System"/>
+    <Reference name="System.Core"/>
+	  <Reference name="System.Data"/>
+	    <Reference name="System.Data.SQLite"/>
+  <Reference name="System.Xml"/>
+	
   <Files>
     <Match pattern="*.cs" recurse="true">
       <Exclude pattern="Tests" />

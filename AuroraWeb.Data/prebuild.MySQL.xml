@@ -17,6 +17,13 @@
   <Reference name="Aurora.Services.DataService"/>
   <Reference name="Nini"/>
   <Reference name="OpenMetaverseTypes"/>
+  <Reference name="Aurora.DataManager.MySQL"/>
+  <Reference name="AuroraWeb.Data"/>
+  <Reference name="MySql.Data"/>
+  <Reference name="OpenMetaverse.StructuredData"/>
+  <Reference name="OpenSim.Region.Framework"/>
+  <Reference name="System"/>
+  <Reference name="System.Data"/>
   <Files>
     <Match pattern="*.cs" recurse="true">
       <Exclude pattern="Tests" />

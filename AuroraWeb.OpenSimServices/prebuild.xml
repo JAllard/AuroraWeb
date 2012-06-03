@@ -18,22 +18,16 @@
   <Reference name="System.Xml"/>
 
   <Reference name="Nini" path="../../bin/"/>
-  <Reference name="Mono.Addins" path="../../bin/"/>
+  
   <Reference name="log4net" path="../../bin/"/>
   <Reference name="OpenMetaverse" path="../../bin/"/>
   <Reference name="OpenMetaverseTypes" path="../../bin/"/>
-
-  <Reference name="OpenSim.Framework"/>
-  <Reference name="OpenSim.Data"/>
-  <Reference name="OpenSim.Framework.Servers.HttpServer"/>
-  <Reference name="OpenSim.Services.Base"/>
-  <Reference name="OpenSim.Services.Interfaces"/>
-  <Reference name="OpenSim.Services.UserAccountService"/>
-  <Reference name="OpenSim.Services.AuthenticationService"/>
-  <Reference name="OpenSim.Services.InventoryService"/>
-  <Reference name="OpenSim.Services.GridService"/>
-
+  <Reference name="OpenMetaverse.StructuredData" path="../../bin/"/>
+  <Reference name="OpenSim.Services"/>
+  <Reference name="AuroraFramework"/>
   <Reference name="AuroraWeb.Data"/>
+  <Reference name="AuroraWeb.Data.MySQL"/>
+  <Reference name="AuroraWeb.Loginservice"/>
   <Reference name="AuroraWeb.Utils"/>
 
   <Files>

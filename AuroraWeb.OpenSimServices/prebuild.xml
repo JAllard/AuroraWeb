@@ -1,0 +1,44 @@
+<!-- AuroraWeb.UserAccountService -->
+<Project frameworkVersion="v3_5" name="AuroraWeb.OpenSimServices" path="addon-modules/AuroraWeb.OpenSimServices" type="Library">
+  <Configuration name="Debug">
+    <Options>
+      <OutputPath>../../bin/</OutputPath>
+    </Options>
+  </Configuration>
+  <Configuration name="Release">
+    <Options>
+      <OutputPath>../../bin/</OutputPath>
+    </Options>
+  </Configuration>
+
+  <ReferencePath>../../bin/</ReferencePath>
+  <Reference name="System"/>
+  <Reference name="System.Core"/>
+  <Reference name="System.Web"/>
+  <Reference name="System.Xml"/>
+
+  <Reference name="Nini" path="../../bin/"/>
+  <Reference name="Mono.Addins" path="../../bin/"/>
+  <Reference name="log4net" path="../../bin/"/>
+  <Reference name="OpenMetaverse" path="../../bin/"/>
+  <Reference name="OpenMetaverseTypes" path="../../bin/"/>
+
+  <Reference name="OpenSim.Framework"/>
+  <Reference name="OpenSim.Data"/>
+  <Reference name="OpenSim.Framework.Servers.HttpServer"/>
+  <Reference name="OpenSim.Services.Base"/>
+  <Reference name="OpenSim.Services.Interfaces"/>
+  <Reference name="OpenSim.Services.UserAccountService"/>
+  <Reference name="OpenSim.Services.AuthenticationService"/>
+  <Reference name="OpenSim.Services.InventoryService"/>
+  <Reference name="OpenSim.Services.GridService"/>
+
+  <Reference name="AuroraWeb.Data"/>
+  <Reference name="AuroraWeb.Utils"/>
+
+  <Files>
+    <Match pattern="*.cs" recurse="true">
+      <Exclude pattern="Tests" />
+    </Match>
+  </Files>
+</Project>
